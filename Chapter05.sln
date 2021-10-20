@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "demo", "demo\demo.csproj", "{A429AAD1-6413-4AFA-984E-229762E60B8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo", "demo\demo.csproj", "{A429AAD1-6413-4AFA-984E-229762E60B8E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Chapter05", "Chapter05\Chapter05.csproj", "{B5659DA4-EAB2-4440-8E38-BE89CCA0F87D}"
 EndProject
@@ -16,6 +16,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PeopleApp", "PeopleApp", "{E63F2159-7D76-4741-AA5D-B212CE6A4474}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PeopleApps", "PeopleApps", "{7A347332-38F4-4E79-8388-55A5C96F5B53}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PeopleApp", "PeopleApp", "{7A347332-38F4-4E79-8388-55A5C96F5B53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PacktLibrary", "PacktLibrary\PacktLibrary.csproj", "{BCBC0224-4371-48FA-B426-F381CD50930D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeopleApp", "PeopleApp\PeopleApp.csproj", "{2C550CE7-CF5D-4167-9E83-118074549FC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
