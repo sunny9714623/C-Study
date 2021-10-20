@@ -1,6 +1,5 @@
 ﻿using Packt.Shared;
 using System;
-using Packt.Shared;
 using static System.Console;
 
 namespace PeopleApp
@@ -65,6 +64,9 @@ namespace PeopleApp
             var thing1 = ("Neville", 4);
             WriteLine($"{thing1.Item1} has {thing1.Item2} children");
 
+            var harry = new Person { Name="Harry"};
+            var mary = new Person { Name = "Mary" };
+            var jill = new Person { Name = "Jill" };
             var baby1 = mary.ProcreateWith(harry);
             var baby2 = Person.Procreate(harry, jill);
             var baby3 = harry * mary;

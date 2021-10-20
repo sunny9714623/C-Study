@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Packt.Shareds
+namespace Packt.Shared
 {
     [System.Flags]
     public enum WondersOfTheAncientWord : byte
