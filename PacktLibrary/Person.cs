@@ -71,6 +71,10 @@ namespace Packt.Shared
                 return localNumber * localFactorial(localNumber - 1);
             }
         }
+        public int MethodIWantToCall(string input)
+        {
+            return input.Length;
+        }
     }
     public class BankAccount
     {

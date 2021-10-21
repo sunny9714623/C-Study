@@ -4,6 +4,7 @@ using static System.Console;
 
 namespace PeopleApp
 {
+    delegate int DelegateWithMatchingSignature(string s);
     class Program
     {
         static void Main(string[] args)
@@ -76,6 +77,11 @@ namespace PeopleApp
             WriteLine(format: "{0}'s first child is named \"{1}\". ", arg0: harry.Name, arg1: harry.Children[0].Name);
             WriteLine("~~~~~~~~~~~~~~~~~~~");
             WriteLine($"5! is {Person.Factorial(5)}");
+            int answer = mary.MethodIWantToCall("Frog");
+            var d = new DelegateWithMatchingSignature(mary.MethodIWantToCall);
+            //call the delegate,which will call the method
+            int answer2 = d("Frogs");
+            WriteLine($"answer1 is {answer} and answer2 is {answer2}");
         }
     }
 }

@@ -48,5 +48,24 @@ namespace Packt.Shared
                 Children[index] = value;
             }
         }
+        //Event delegate field
+        public event EventHandler Shout;
+
+        //data field
+        public int AngerLevel;
+        public void Poke()
+        {
+            AngerLevel++;
+            if (AngerLevel >= 3)
+            {
+                //if something is listening
+                //if (Shout != null)
+                //{
+                //    //then call the delegate
+                //    Shout(this,EventArgs.Empty);
+                //}
+                Shout?.Invoke(this, EventArgs.Empty);
+            }
+        }
     }
 }
