@@ -53,6 +53,16 @@ namespace demo
             {
                 WriteLine($"{person.Name}");
             }
+            WriteLine("Use PersonComparer's IComparer implementation to sort:");
+            Array.Sort(people,new PersonComparer());
+            foreach(var person in people)
+            {
+                WriteLine($"{person.Name}");
+            }
+            WriteLine("@@@@@@@@@@@@@@@@@");
+            IPlayable dvd = new DvdPlayer();
+            dvd.Pause();
+            dvd.Stop();
         }
         private static void Harry_Shout(object sender,EventArgs e)
         {
