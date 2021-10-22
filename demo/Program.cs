@@ -55,7 +55,7 @@ namespace demo
             }
             WriteLine("Use PersonComparer's IComparer implementation to sort:");
             Array.Sort(people,new PersonComparer());
-            foreach(var person in people)
+            foreach (var person in people)
             {
                 WriteLine($"{person.Name}");
             }
@@ -63,6 +63,20 @@ namespace demo
             IPlayable dvd = new DvdPlayer();
             dvd.Pause();
             dvd.Stop();
+
+            WriteLine("------------------");
+            var t1 = new Thing();
+            t1.Data = 42;
+            WriteLine($"Thing with an integer:{t1.Process(42)}");
+            var t2 = new Thing();
+            t2.Data = "apple";
+            WriteLine($"Thing with a stirng:{t2.Process("apple")}");
+            var gt1 = new GenericThing<int>();
+            gt1.Data = 42;
+            WriteLine($"GenericThing with an integer:{gt1.Process(42)}");
+            var gt2 = new GenericThing<string>();
+            gt2.Data = "apple";
+            WriteLine($"GenericThing with an string:{gt2.Process("apple")}");
         }
         private static void Harry_Shout(object sender,EventArgs e)
         {
