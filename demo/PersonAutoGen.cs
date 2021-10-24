@@ -67,5 +67,13 @@ namespace Packt.Shared
                 Shout?.Invoke(this, EventArgs.Empty);
             }
         }
+        public void WriteToConsole()
+        {
+            Console.WriteLine($"{Name} was born on a {DateOfBirth:dddd}");
+        }
+        public override string ToString()
+        {
+            return $"{Name} is a {base.ToString()}";
+        }
     }
 }
