@@ -101,6 +101,13 @@ namespace demo
             WriteLine($"{john.Name} was hired on {john.HireDate:dd/MM/yy}");
             john.WriteToConsole();
             WriteLine(john.ToString());
+            Employee aliceInEmployee = new Employee { Name = "Alice", EmployeeCode = "AA123", DateOfBirth = new DateTime(1999, 3, 17) };
+            Person aliceInPerson = aliceInEmployee;
+            WriteLine("-----------------------");
+            aliceInEmployee.WriteToConsole();
+            aliceInPerson.WriteToConsole();
+            WriteLine(aliceInEmployee.ToString());
+            WriteLine(aliceInPerson.ToString());
         }
         private static void Harry_Shout(object sender,EventArgs e)
         {

@@ -69,7 +69,7 @@ namespace Packt.Shared
         }
         public void WriteToConsole()
         {
-            Console.WriteLine($"{Name} was born on a {DateOfBirth:dddd}");
+            Console.WriteLine($"{Name} was born on a {DateOfBirth:dd/yyyy/}");
         }
         public override string ToString()
         {
