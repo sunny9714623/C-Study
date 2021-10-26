@@ -19,13 +19,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter07", "Chapter07", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AssembliesAndNamespaces", "AssembliesAndNamespaces", "{8C3D755D-31F5-4B51-B668-3AA9CE6197B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssembliesAndNamespaces", "AssembliesAndNamespaces\AssembliesAndNamespaces.csproj", "{BE7DD561-45E8-481F-8C7B-95DE5E68A776}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssembliesAndNamespaces", "AssembliesAndNamespaces\AssembliesAndNamespaces.csproj", "{BE7DD561-45E8-481F-8C7B-95DE5E68A776}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SharedLibrary", "SharedLibrary", "{BF3ABCC7-450E-4421-A88F-4DA703D3ABB7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary", "SharedLibrary\SharedLibrary.csproj", "{9FDD2E71-0018-41BD-99BC-BD2D48C154C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedLibrary", "SharedLibrary\SharedLibrary.csproj", "{9FDD2E71-0018-41BD-99BC-BD2D48C154C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetCoreEverywhere", "DotnetCoreEverywhere\DotnetCoreEverywhere.csproj", "{725D2D51-73AD-4F05-BD6C-E34A1FA3D461}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetCoreEverywhere", "DotnetCoreEverywhere\DotnetCoreEverywhere.csproj", "{725D2D51-73AD-4F05-BD6C-E34A1FA3D461}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
