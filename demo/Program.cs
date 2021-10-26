@@ -1,5 +1,7 @@
 ﻿using System;
+using demo.Extensions;
 using Packt.Shared;
+using PacktLibrary.Exceptions;
 using static System.Console;
 
 namespace demo
@@ -106,8 +108,43 @@ namespace demo
             WriteLine("-----------------------");
             aliceInEmployee.WriteToConsole();
             aliceInPerson.WriteToConsole();
+            //Employee explicitAlice = (Employee)aliceInPerson;
+            if(aliceInPerson is Employee)
+            {
+                WriteLine($"{nameof(aliceInPerson)} IS an Employee");
+                Employee explicitALice = (Employee)aliceInPerson;
+            }
             WriteLine(aliceInEmployee.ToString());
             WriteLine(aliceInPerson.ToString());
+            Employee aliceAsEmployee = aliceInPerson as Employee;
+            if (aliceAsEmployee != null)
+            {
+                WriteLine($"{nameof(aliceInPerson)} AS an Employe");
+                // do something with aliceAsEmployee
+            }
+            try
+            {
+                john.TimeTravel(new DateTime(1999, 12, 31));
+                john.TimeTravel(new DateTime(1950, 12, 25));
+            }
+            catch(PersonException ex)
+            {
+                WriteLine(ex.Message);
+            }
+            string email1 = "pamela@test.com";
+            string email2 = "ian&test.com";
+            WriteLine("{0} is a valid e-mail address : {1}",
+                arg0: email1,
+                arg1: StringExtensions.IsValidEmail(email1));
+            WriteLine("{0} is a valid e-mail address : {1}",
+                arg0: email2,
+                arg1: StringExtensions.IsValidEmail(email2));
+            WriteLine("{0} is a valid e-mail address : {1}",
+                arg0: email1,
+                arg1: email1.IsValidEmail());
+            WriteLine("{0} is a valid e-mail address : {1}",
+                arg0: email2,
+                arg1: email2.IsValidEmail());
         }
         private static void Harry_Shout(object sender,EventArgs e)
         {

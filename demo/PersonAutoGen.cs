@@ -1,6 +1,8 @@
-﻿using System;
+﻿using PacktLibrary.Exceptions;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using static System.Console;
 
 namespace Packt.Shared
 {
@@ -74,6 +76,17 @@ namespace Packt.Shared
         public override string ToString()
         {
             return $"{Name} is a {base.ToString()}";
+        }
+        public void TimeTravel(DateTime when)
+        {
+            if(when <= DateOfBirth)
+            {
+                throw new PersonException("If you travel back in time to a date earlier than your own birth, when the universe will explode!");
+            }
+            else
+            {
+                WriteLine($"Welcome to {when:yyyy}!");
+            }
         }
     }
 }
