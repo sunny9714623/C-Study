@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DialectSoftware.Collections.Matrix" Version="1.0.0" />
     <PackageReference Include="newtonsoft.json" Version="13.0.1" />
     <PackageReference Include="Packt.George.SharedLibrary" Version="1.0.0" />
   </ItemGroup>
