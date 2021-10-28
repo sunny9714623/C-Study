@@ -29,11 +29,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotnetCoreEverywhere", "Dot
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter08", "Chapter08", "{FCC14600-6BAD-4FC7-A7C3-AB8B6E24B48C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithNumbers", "WorkingWithNumbers\WorkingWithNumbers.csproj", "{044365E2-7C20-466F-AB8C-3C32671AA747}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithNumbers", "WorkingWithNumbers\WorkingWithNumbers.csproj", "{044365E2-7C20-466F-AB8C-3C32671AA747}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithText", "WorkingWithText\WorkingWithText.csproj", "{7E38ACE4-F234-4387-8CD8-0E8B07E95E09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithText", "WorkingWithText\WorkingWithText.csproj", "{7E38ACE4-F234-4387-8CD8-0E8B07E95E09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithRegularExpressions", "WorkingWithRegularExpressions\WorkingWithRegularExpressions.csproj", "{AB5FB095-A868-48E1-BB7B-DBF46382D651}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithRegularExpressions", "WorkingWithRegularExpressions\WorkingWithRegularExpressions.csproj", "{AB5FB095-A868-48E1-BB7B-DBF46382D651}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithLists", "WorkingWithLists\WorkingWithLists.csproj", "{7193E01C-49A2-458B-8E6D-F7D23F281605}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithDictionary", "WorkingWithDictionary\WorkingWithDictionary.csproj", "{41F76DC3-C00F-4BBC-8EAF-5E775B2AE6BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithRanges", "WorkingWithRanges\WorkingWithRanges.csproj", "{78B3F005-5463-4122-BA4B-0433154C3697}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithNetworkResources", "WorkingWithNetworkResources\WorkingWithNetworkResources.csproj", "{BD8351B2-BFAE-488B-B68C-715D2A0BEAF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithReflection", "WorkingWithReflection\WorkingWithReflection.csproj", "{13C90D03-DD51-4A5B-A36E-0BC5C11C08E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +91,26 @@ Global
 		{AB5FB095-A868-48E1-BB7B-DBF46382D651}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB5FB095-A868-48E1-BB7B-DBF46382D651}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB5FB095-A868-48E1-BB7B-DBF46382D651}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7193E01C-49A2-458B-8E6D-F7D23F281605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7193E01C-49A2-458B-8E6D-F7D23F281605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7193E01C-49A2-458B-8E6D-F7D23F281605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7193E01C-49A2-458B-8E6D-F7D23F281605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41F76DC3-C00F-4BBC-8EAF-5E775B2AE6BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41F76DC3-C00F-4BBC-8EAF-5E775B2AE6BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41F76DC3-C00F-4BBC-8EAF-5E775B2AE6BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41F76DC3-C00F-4BBC-8EAF-5E775B2AE6BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78B3F005-5463-4122-BA4B-0433154C3697}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78B3F005-5463-4122-BA4B-0433154C3697}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78B3F005-5463-4122-BA4B-0433154C3697}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78B3F005-5463-4122-BA4B-0433154C3697}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD8351B2-BFAE-488B-B68C-715D2A0BEAF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD8351B2-BFAE-488B-B68C-715D2A0BEAF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD8351B2-BFAE-488B-B68C-715D2A0BEAF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD8351B2-BFAE-488B-B68C-715D2A0BEAF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13C90D03-DD51-4A5B-A36E-0BC5C11C08E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13C90D03-DD51-4A5B-A36E-0BC5C11C08E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13C90D03-DD51-4A5B-A36E-0BC5C11C08E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13C90D03-DD51-4A5B-A36E-0BC5C11C08E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +126,11 @@ Global
 		{044365E2-7C20-466F-AB8C-3C32671AA747} = {FCC14600-6BAD-4FC7-A7C3-AB8B6E24B48C}
 		{7E38ACE4-F234-4387-8CD8-0E8B07E95E09} = {FCC14600-6BAD-4FC7-A7C3-AB8B6E24B48C}
 		{AB5FB095-A868-48E1-BB7B-DBF46382D651} = {FCC14600-6BAD-4FC7-A7C3-AB8B6E24B48C}
+		{7193E01C-49A2-458B-8E6D-F7D23F281605} = {FCC14600-6BAD-4FC7-A7C3-AB8B6E24B48C}
+		{41F76DC3-C00F-4BBC-8EAF-5E775B2AE6BB} = {FCC14600-6BAD-4FC7-A7C3-AB8B6E24B48C}
+		{78B3F005-5463-4122-BA4B-0433154C3697} = {FCC14600-6BAD-4FC7-A7C3-AB8B6E24B48C}
+		{BD8351B2-BFAE-488B-B68C-715D2A0BEAF0} = {FCC14600-6BAD-4FC7-A7C3-AB8B6E24B48C}
+		{13C90D03-DD51-4A5B-A36E-0BC5C11C08E0} = {FCC14600-6BAD-4FC7-A7C3-AB8B6E24B48C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD044F59-E281-4170-ACF9-D5C764FA7BE7}
