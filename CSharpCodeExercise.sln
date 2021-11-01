@@ -49,7 +49,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Internationalization", "Int
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter09", "Chapter09", "{D4B21B25-82E2-4DAD-A432-AC6DA5FB643F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithFileSystems", "WorkingWithFileSystems\WorkingWithFileSystems.csproj", "{517645CB-4963-4DFB-9D46-5F7752AF5526}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithFileSystems", "WorkingWithFileSystems\WorkingWithFileSystems.csproj", "{517645CB-4963-4DFB-9D46-5F7752AF5526}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithStreams", "WorkingWithStreams\WorkingWithStreams.csproj", "{A9CF968C-EB92-47D5-B205-33FBD89A4356}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +127,10 @@ Global
 		{517645CB-4963-4DFB-9D46-5F7752AF5526}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{517645CB-4963-4DFB-9D46-5F7752AF5526}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{517645CB-4963-4DFB-9D46-5F7752AF5526}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9CF968C-EB92-47D5-B205-33FBD89A4356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9CF968C-EB92-47D5-B205-33FBD89A4356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9CF968C-EB92-47D5-B205-33FBD89A4356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9CF968C-EB92-47D5-B205-33FBD89A4356}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -147,6 +153,7 @@ Global
 		{13C90D03-DD51-4A5B-A36E-0BC5C11C08E0} = {FCC14600-6BAD-4FC7-A7C3-AB8B6E24B48C}
 		{D7777EDA-E9CE-4257-9799-D6735AA288A5} = {FCC14600-6BAD-4FC7-A7C3-AB8B6E24B48C}
 		{517645CB-4963-4DFB-9D46-5F7752AF5526} = {D4B21B25-82E2-4DAD-A432-AC6DA5FB643F}
+		{A9CF968C-EB92-47D5-B205-33FBD89A4356} = {D4B21B25-82E2-4DAD-A432-AC6DA5FB643F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD044F59-E281-4170-ACF9-D5C764FA7BE7}
