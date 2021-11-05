@@ -14,6 +14,52 @@ namespace Packt.Shared
         // salt size must be at least 8 bytes,we will use 16 bytes
         private static readonly byte[] salt = Encoding.Unicode.GetBytes("7BANANAS");
 
+        public static string PublicKey;
+
+        private static Dictionary<string, User> Users = new Dictionary<string, User>();
+        public static User Register(
+            string userName,string password)
+        {
+            // generate a random salt
+            var rng = RandomNumberGenerator.Create();
+            var saltBytes = new byte[16];
+            rng.GetBytes(saltBytes);
+            var saltText = Convert.ToBase64String(saltBytes);
+
+            // generate the salted and hashed password
+            var saltedhashedPassword = SaltAndHashPassword(password, saltText);
+
+            var user = new User
+            {
+                Name = userName,
+                Salt = saltText,
+                SaltedHashedPassword = saltedhashedPassword
+            };
+            Users.Add(user.Name,user);
+            return user;
+        }
+        public static bool CheckPassword(
+            string userName,string password)
+        {
+            if (!Users.ContainsKey(userName))
+            {
+                return false;
+            }
+            var user = Users[userName];
+
+            // re-generate the salted and hashed password
+            var saltedhashedPassword = SaltAndHashPassword(password, user.Salt);
+            return (saltedhashedPassword == user.SaltedHashedPassword);
+        }
+
+        private static string SaltAndHashPassword(
+            string password,string salt)
+        {
+            var sha = SHA256.Create();
+            var saltedPassword = password + salt;
+            return Convert.ToBase64String(sha.ComputeHash(Encoding.Unicode.GetBytes(saltedPassword)));
+        }
+
         // iterations must be at least 1000, we will use 2000
         private static readonly int iterations = 200;
         public static string Encrypt(
@@ -56,6 +102,50 @@ namespace Packt.Shared
             }
 
             return Encoding.Unicode.GetString(plainBytes);
+        }
+
+        public static string ToXmlStringExt(this RSA rsa, bool includePrivateParameters)
+        {
+            var p = rsa.ExportParameters(includePrivateParameters);
+            XElement xml;
+            if (includePrivateParameters)
+            {
+                xml = new XElement("RSAKeyValue",
+                    new XElement("Modulus", ToBase64String(p.Modulus)),
+                    new XElement("Exponent", ToBase64String(p.Exponent)),
+                    new XElement("P", ToBase64String(p.P)),
+                    new XElement("Q", ToBase64String(p.Q)),
+                    new XElement("DP", ToBase64String(p.DP)),
+                    new XElement("DQ", ToBase64String(p.DQ)),
+                    new XElement("InverseQ", ToBase64String(p.InverseQ))
+                    );
+            }
+            else
+            {
+                xml = new XElement("RSAKeyValue", new XElement("Modulus", ToBase64String(p.Modulus)),
+                    new XElement("Exponent", ToBase64String(p.Exponent)));
+            }
+            return xml?.ToString();
+        }
+
+        public static void FromXmlStringExt(this RSA rsa, string parametersAsXml)
+        {
+            var xml = XDocument.Parse(parametersAsXml);
+            var root = xml.Element("RSAKeyValue");
+            var p = new RSAParameters
+            {
+                Modulus = FromBase64String(root.Element("Modulus").Value),
+                Exponent = FromBase64String(root.Element("Exponent").Value)
+            };
+            if (root.Element("P") != null)
+            {
+                p.P = FromBase64String(root.Element("P").Value);
+                p.Q = FromBase64String(root.Element("Q").Value);
+                p.DP = FromBase64String(root.Element("DP").Value);
+                p.DQ = FromBase64String(root.Element("DQ").Value);
+                p.InverseQ = FromBase64String(root.Element("InverseQ").Value);
+            }
+            rsa.ImportParameters(p);
         }
     }
 }
