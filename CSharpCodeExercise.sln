@@ -53,11 +53,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithFileSystems", "W
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithStreams", "WorkingWithStreams\WorkingWithStreams.csproj", "{A9CF968C-EB92-47D5-B205-33FBD89A4356}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithEncodings", "WorkingWithEncodings\WorkingWithEncodings.csproj", "{655B6394-2BAA-403B-BA20-AD6559F6AC1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithEncodings", "WorkingWithEncodings\WorkingWithEncodings.csproj", "{655B6394-2BAA-403B-BA20-AD6559F6AC1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithSerialization", "WorkingWithSerialization\WorkingWithSerialization.csproj", "{D175081A-15AE-4818-962F-D8A636BAB9C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithSerialization", "WorkingWithSerialization\WorkingWithSerialization.csproj", "{D175081A-15AE-4818-962F-D8A636BAB9C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise02", "Exercise02\Exercise02.csproj", "{6566DF83-B64F-4D67-9980-8B18DDAD8520}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise02", "Exercise02\Exercise02.csproj", "{6566DF83-B64F-4D67-9980-8B18DDAD8520}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter10", "Chapter10", "{879336EB-67A0-4A84-A2A3-3B9CB26676AF}"
 EndProject
@@ -65,17 +65,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CryptographyLib", "Cryptogr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EncryptionApp", "EncryptionApp", "{428BEEAF-A4DC-42E4-9D96-0EF503A12038}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptographyLib", "CryptographyLib\CryptographyLib.csproj", "{57829CDE-04E1-450F-92F7-F3522AA3BEF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CryptographyLib", "CryptographyLib\CryptographyLib.csproj", "{57829CDE-04E1-450F-92F7-F3522AA3BEF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionApp", "EncryptionApp\EncryptionApp.csproj", "{EAFEAD74-8485-4371-AD1D-4DD5F745C2C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncryptionApp", "EncryptionApp\EncryptionApp.csproj", "{EAFEAD74-8485-4371-AD1D-4DD5F745C2C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashingApp", "HashingApp\HashingApp.csproj", "{778047A7-8911-44FD-BAD8-043DDD08AE09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashingApp", "HashingApp\HashingApp.csproj", "{778047A7-8911-44FD-BAD8-043DDD08AE09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SigningAPP", "SigningAPP\SigningAPP.csproj", "{F77F013A-AD90-498B-B2BE-5A9B45971DA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SigningAPP", "SigningAPP\SigningAPP.csproj", "{F77F013A-AD90-498B-B2BE-5A9B45971DA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomizingAPP", "RandomizingAPP\RandomizingAPP.csproj", "{EA5D155F-8AE4-44F8-9115-2756713ABD52}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RandomizingAPP", "RandomizingAPP\RandomizingAPP.csproj", "{EA5D155F-8AE4-44F8-9115-2756713ABD52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureAPP", "SecureAPP\SecureAPP.csproj", "{17DF53D2-5A30-49FC-BF97-D7C3B0CA1AF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SecureAPP", "SecureAPP\SecureAPP.csproj", "{17DF53D2-5A30-49FC-BF97-D7C3B0CA1AF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter11", "Chapter11", "{6F04BF1E-340B-4AFE-9911-F2FAADC9CF20}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithEFCore", "WorkingWithEFCore", "{D752D95D-B80A-4624-91C8-195FD72028A8}"
+	ProjectSection(SolutionItems) = preProject
+		Northwind.sql = Northwind.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -225,6 +232,7 @@ Global
 		{F77F013A-AD90-498B-B2BE-5A9B45971DA7} = {428BEEAF-A4DC-42E4-9D96-0EF503A12038}
 		{EA5D155F-8AE4-44F8-9115-2756713ABD52} = {428BEEAF-A4DC-42E4-9D96-0EF503A12038}
 		{17DF53D2-5A30-49FC-BF97-D7C3B0CA1AF7} = {428BEEAF-A4DC-42E4-9D96-0EF503A12038}
+		{D752D95D-B80A-4624-91C8-195FD72028A8} = {6F04BF1E-340B-4AFE-9911-F2FAADC9CF20}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD044F59-E281-4170-ACF9-D5C764FA7BE7}
