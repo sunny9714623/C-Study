@@ -20,6 +20,9 @@ namespace Packt.Shared
         {
             // example of using Fluent API instead of attributes
             modelBuilder.Entity<Category>().Property(category => category.CategoryName).IsRequired().HasMaxLength(15);
+
+            // global filter to remove discontinued products
+            modelBuilder.Entity<Product>().HasQueryFilter(p=>!p.Discontinued);
         }
     }
 }

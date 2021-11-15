@@ -16,8 +16,8 @@ namespace WorkingWithEFCore
             // modelBuilder.Entity<Product>().Property(product => product.ProductName).IsRequired().HasMaxLength(40);
             // modelBuilder.Entity<Product>().HasData(new Product { ProductName = "test" });
             // QueryingCategories();
-            QueryingProducts();
-
+            // QueryingProducts();
+            QueryingWithLike();
         }
 
         static void QueryingCategories()
@@ -58,6 +58,23 @@ namespace WorkingWithEFCore
                 foreach (Product item in prods)
                 {
                     WriteLine("{0}:{1} costs {2:$#,##0.0..} and has {3} in stock.", item.ProductID, item.ProductName, item.Cost, item.Stock);
+                }
+            }
+        }
+
+        static void QueryingWithLike()
+        {
+            using(var db=new Northwind())
+            {
+                var loggerFactory = db.GetService<ILoggerFactory>();
+                loggerFactory.AddProvider(new ConsoleLoggerProvider());
+                Write("Enter part of a product name : ");
+                string input = ReadLine();
+                // using like model
+                IQueryable<Product> prods = db.Products.Where(p => EF.Functions.Like(p.ProductName, $"%{input}%"));
+                foreach(Product item in prods)
+                {
+                    WriteLine("{0} has {1} units in stock. Discontinued? {2}", item.ProductName, item.Stock, item.Discontinued);
                 }
             }
         }
