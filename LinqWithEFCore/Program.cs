@@ -1,4 +1,7 @@
 ﻿using System;
+using Packt.Shared;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace LinqWithEFCore
 {
@@ -6,7 +9,8 @@ namespace LinqWithEFCore
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
+        static void FilterAndSort
     }
 }
