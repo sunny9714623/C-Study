@@ -84,19 +84,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithEFCore", "Workin
 		Northwind.sql = Northwind.sql
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithEFCore", "WorkingWithEFCore\WorkingWithEFCore.csproj", "{F017E79E-5CE1-4F16-B26E-E2580C999AED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithEFCore", "WorkingWithEFCore\WorkingWithEFCore.csproj", "{F017E79E-5CE1-4F16-B26E-E2580C999AED}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter12", "Chapter12", "{19399A10-2351-4F4E-B4CD-2B2E0C8762DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqWithArrayOfStrings", "LinqWithArrayOfStrings\LinqWithArrayOfStrings.csproj", "{8649B2BC-BA36-4C1C-BDCD-0D0E387C2585}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqWithArrayOfStrings", "LinqWithArrayOfStrings\LinqWithArrayOfStrings.csproj", "{8649B2BC-BA36-4C1C-BDCD-0D0E387C2585}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqWithArrayOfExceptions", "LinqWithArrayOfExceptions\LinqWithArrayOfExceptions.csproj", "{B4D3108B-14CD-4143-9692-7204C6CF379B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqWithArrayOfExceptions", "LinqWithArrayOfExceptions\LinqWithArrayOfExceptions.csproj", "{B4D3108B-14CD-4143-9692-7204C6CF379B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqWithSets", "LinqWithSets\LinqWithSets.csproj", "{6ACC435D-7ECC-4569-A608-F01E4DCAB9C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqWithSets", "LinqWithSets\LinqWithSets.csproj", "{6ACC435D-7ECC-4569-A608-F01E4DCAB9C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqWithEFCore", "LinqWithEFCore\LinqWithEFCore.csproj", "{1EF18148-FE55-478A-B6F8-7724E6A28F82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqWithEFCore", "LinqWithEFCore\LinqWithEFCore.csproj", "{1EF18148-FE55-478A-B6F8-7724E6A28F82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqInParallel", "LinqInParallel\LinqInParallel.csproj", "{46995619-96C8-4ABD-8C10-AB2936CDC3C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqInParallel", "LinqInParallel\LinqInParallel.csproj", "{46995619-96C8-4ABD-8C10-AB2936CDC3C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chapter13", "Chapter13", "{E8A50BAB-FEE1-4B05-A5C6-AE3DCF52120E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitoringLib", "MonitoringLib\MonitoringLib.csproj", "{088FFEB2-87C9-4465-9DCF-01C2ABF584B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitoringApp", "MonitoringApp\MonitoringApp.csproj", "{4F0C9F80-91BD-4C54-B756-055391A966B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -236,6 +242,14 @@ Global
 		{46995619-96C8-4ABD-8C10-AB2936CDC3C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46995619-96C8-4ABD-8C10-AB2936CDC3C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46995619-96C8-4ABD-8C10-AB2936CDC3C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088FFEB2-87C9-4465-9DCF-01C2ABF584B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088FFEB2-87C9-4465-9DCF-01C2ABF584B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088FFEB2-87C9-4465-9DCF-01C2ABF584B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088FFEB2-87C9-4465-9DCF-01C2ABF584B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F0C9F80-91BD-4C54-B756-055391A966B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F0C9F80-91BD-4C54-B756-055391A966B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F0C9F80-91BD-4C54-B756-055391A966B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F0C9F80-91BD-4C54-B756-055391A966B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -277,6 +291,8 @@ Global
 		{6ACC435D-7ECC-4569-A608-F01E4DCAB9C9} = {19399A10-2351-4F4E-B4CD-2B2E0C8762DE}
 		{1EF18148-FE55-478A-B6F8-7724E6A28F82} = {19399A10-2351-4F4E-B4CD-2B2E0C8762DE}
 		{46995619-96C8-4ABD-8C10-AB2936CDC3C4} = {19399A10-2351-4F4E-B4CD-2B2E0C8762DE}
+		{088FFEB2-87C9-4465-9DCF-01C2ABF584B7} = {E8A50BAB-FEE1-4B05-A5C6-AE3DCF52120E}
+		{4F0C9F80-91BD-4C54-B756-055391A966B9} = {E8A50BAB-FEE1-4B05-A5C6-AE3DCF52120E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD044F59-E281-4170-ACF9-D5C764FA7BE7}
