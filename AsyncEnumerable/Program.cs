@@ -11,7 +11,7 @@ namespace AsyncEnumerable
         {
             await foreach(int number in GetNumbers())
             {
-                WriteLine($"Number:{number}");
+                WriteLine($"Number:{number} ");
             }
         }
 
