@@ -104,15 +104,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonitoringLib", "Monitoring
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonitoringApp", "MonitoringApp\MonitoringApp.csproj", "{4F0C9F80-91BD-4C54-B756-055391A966B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithTasks", "WorkingWithTasks\WorkingWithTasks.csproj", "{4C6FDACE-317F-4BE2-9EE5-0044601715ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithTasks", "WorkingWithTasks\WorkingWithTasks.csproj", "{4C6FDACE-317F-4BE2-9EE5-0044601715ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NestedAndChildTasks", "NestedAndChildTasks\NestedAndChildTasks.csproj", "{EBF1617E-5809-4292-B318-9B9F0DDFC93E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NestedAndChildTasks", "NestedAndChildTasks\NestedAndChildTasks.csproj", "{EBF1617E-5809-4292-B318-9B9F0DDFC93E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynchronizingResourceAccess", "SynchronizingResourceAccess\SynchronizingResourceAccess.csproj", "{99A8CFC4-AF22-4A70-BB60-53D9D67E741D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SynchronizingResourceAccess", "SynchronizingResourceAccess\SynchronizingResourceAccess.csproj", "{99A8CFC4-AF22-4A70-BB60-53D9D67E741D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncConsole", "AsyncConsole\AsyncConsole.csproj", "{2C3AF4A3-8896-4A0C-8534-84EF4CF978A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncConsole", "AsyncConsole\AsyncConsole.csproj", "{2C3AF4A3-8896-4A0C-8534-84EF4CF978A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncEnumerable", "AsyncEnumerable\AsyncEnumerable.csproj", "{6F10332B-E27D-4C56-A2CC-E4A92A40815F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncEnumerable", "AsyncEnumerable\AsyncEnumerable.csproj", "{6F10332B-E27D-4C56-A2CC-E4A92A40815F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PracticalApps", "PracticalApps", "{EE204C89-72CD-4AD9-A993-8A7CE0D07170}"
 	ProjectSection(SolutionItems) = preProject
@@ -121,20 +121,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PracticalApps", "PracticalA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NorthwindEntitiesLib", "NorthwindEntitiesLib", "{CBD0F458-71A3-4297-80A8-1B5BE05A1422}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindEntitiesLib", "NorthwindEntitiesLib\NorthwindEntitiesLib.csproj", "{2BA32792-97E0-45D6-8933-3380ECB2B01B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthwindEntitiesLib", "NorthwindEntitiesLib\NorthwindEntitiesLib.csproj", "{2BA32792-97E0-45D6-8933-3380ECB2B01B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NorthwindContextLib", "NorthwindContextLib", "{837EA9DF-DE2E-4065-B473-DB95AF15B7F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindContextLib", "NorthwindContextLib\NorthwindContextLib.csproj", "{2B74DCE7-0391-493E-9159-BF37CE81AE32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthwindContextLib", "NorthwindContextLib\NorthwindContextLib.csproj", "{2B74DCE7-0391-493E-9159-BF37CE81AE32}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NorthwindWeb", "NorthwindWeb", "{2186795D-E450-41C4-9AE4-1267BEF2BD7C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindWeb", "NorthwindWeb\NorthwindWeb.csproj", "{8F6309E1-B0E2-455B-9A04-7E2DBE5660D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthwindWeb", "NorthwindWeb\NorthwindWeb.csproj", "{8F6309E1-B0E2-455B-9A04-7E2DBE5660D6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wwwroot", "wwwroot", "{E5231A70-EE07-4FF4-8C19-51A813A3A399}"
 	ProjectSection(SolutionItems) = preProject
 		index.html = index.html
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NorthwindEmployees", "NorthwindEmployees", "{002D7EE4-9FC1-411E-A48D-04E6A8F19B89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindEmployees", "NorthwindEmployees\NorthwindEmployees.csproj", "{E43D99E9-2F59-4D5B-B7F3-EEB9DF5D3EF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -314,6 +318,10 @@ Global
 		{8F6309E1-B0E2-455B-9A04-7E2DBE5660D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F6309E1-B0E2-455B-9A04-7E2DBE5660D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F6309E1-B0E2-455B-9A04-7E2DBE5660D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E43D99E9-2F59-4D5B-B7F3-EEB9DF5D3EF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E43D99E9-2F59-4D5B-B7F3-EEB9DF5D3EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E43D99E9-2F59-4D5B-B7F3-EEB9DF5D3EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E43D99E9-2F59-4D5B-B7F3-EEB9DF5D3EF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -369,6 +377,8 @@ Global
 		{2186795D-E450-41C4-9AE4-1267BEF2BD7C} = {EE204C89-72CD-4AD9-A993-8A7CE0D07170}
 		{8F6309E1-B0E2-455B-9A04-7E2DBE5660D6} = {2186795D-E450-41C4-9AE4-1267BEF2BD7C}
 		{E5231A70-EE07-4FF4-8C19-51A813A3A399} = {2186795D-E450-41C4-9AE4-1267BEF2BD7C}
+		{002D7EE4-9FC1-411E-A48D-04E6A8F19B89} = {EE204C89-72CD-4AD9-A993-8A7CE0D07170}
+		{E43D99E9-2F59-4D5B-B7F3-EEB9DF5D3EF3} = {002D7EE4-9FC1-411E-A48D-04E6A8F19B89}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD044F59-E281-4170-ACF9-D5C764FA7BE7}
