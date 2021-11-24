@@ -138,7 +138,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "wwwroot", "wwwroot", "{E523
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NorthwindEmployees", "NorthwindEmployees", "{002D7EE4-9FC1-411E-A48D-04E6A8F19B89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindEmployees", "NorthwindEmployees\NorthwindEmployees.csproj", "{E43D99E9-2F59-4D5B-B7F3-EEB9DF5D3EF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthwindEmployees", "NorthwindEmployees\NorthwindEmployees.csproj", "{E43D99E9-2F59-4D5B-B7F3-EEB9DF5D3EF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
