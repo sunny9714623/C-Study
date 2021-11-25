@@ -17,7 +17,7 @@ namespace NorthwindWeb
         {
             services.AddRazorPages();
             string databasePath = Path.Combine("..", "Northwind.db");
-            services.AddDbContext<Northwind>(options => options.UseSqlite($"Data Source={databasePath}"));
+            services.AddDbContext<Northwind>(options => options.UseSqlite($"DataSource={databasePath}"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
