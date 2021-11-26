@@ -62,5 +62,28 @@ namespace NorthwindMvc.Controllers
         //{
         //    return View();
         //}
+        public IActionResult ProductDetail(int? id)
+        {
+            if (!id.HasValue)
+            {
+                return NotFound("You must passa product ID in the route,for example," +
+                    "/home/productdetail/23");
+            }
+            var model = db.Products.SingleOrDefault(p => p.ProductID == id);
+            if (model == null)
+            {
+                return NotFound($"Product with ID of {id} not found.");
+            }
+            return View(model);
+        }
+        public IActionResult ModelBinding()
+        {
+            return View();// the page with a form to submit
+        }
+
+        public IActionResult ModelBingding(Thing thing)
+        {
+            return View(thing); // show the model bound thing
+        }
     }
 }
