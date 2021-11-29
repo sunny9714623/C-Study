@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using NorthwindMvc.Models;
 using Packt.Shared;
+using Microsoft.EntityFrameworkCore;
 
 namespace NorthwindMvc.Controllers
 {
@@ -22,13 +22,14 @@ namespace NorthwindMvc.Controllers
             db = injectedContext;
         }
 
-        public IActionResult Index()
+        // 异步方法，并调用异步方法获取类别和产品
+        public async Task<IActionResult> Index()
         {
             var model = new HomeIndexViewModel
             {
                 VisitorCount = (new Random()).Next(1, 1001),
-                Categories = db.Categories.ToList(),
-                Products = db.Products.ToList()
+                Categories = await db.Categories.ToListAsync(),
+                Products = await db.Products.ToListAsync()
             };
             return View(model);// pass model to view
         }
@@ -62,28 +63,52 @@ namespace NorthwindMvc.Controllers
         //{
         //    return View();
         //}
-        public IActionResult ProductDetail(int? id)
+        public async Task<IActionResult> ProductDetail(int? id)
         {
             if (!id.HasValue)
             {
                 return NotFound("You must passa product ID in the route,for example," +
                     "/home/productdetail/23");
             }
-            var model = db.Products.SingleOrDefault(p => p.ProductID == id);
+            var model = await db.Products.SingleOrDefaultAsync(p => p.ProductID == id);
             if (model == null)
             {
                 return NotFound($"Product with ID of {id} not found.");
             }
-            return View(model);
+            return View(model); // pass model to view and then return result
         }
         public IActionResult ModelBinding()
         {
             return View();// the page with a form to submit
         }
 
-        public IActionResult ModelBingding(Thing thing)
+        [HttpPost]
+        public IActionResult ModelBinding(Thing thing)
         {
-            return View(thing); // show the model bound thing
+            // return View(thing); // show the model bound thing
+            var model = new HomeModelBindingViewModel
+            {
+                Thing = thing,
+                HasErrors = !ModelState.IsValid,
+                ValidationErrors = ModelState.Values.SelectMany(state => state.Errors).Select(error => error.ErrorMessage)
+            };
+            return View(model);
+        }
+
+        public IActionResult ProductsThatCostMoreThan(decimal? price)
+        {
+            if (!price.HasValue)
+            {
+                return NotFound("You must pass a product price in the query string, for example, /Home/ProductsThatCostMoreThan?price=50");
+            }
+            IEnumerable<Product> model = db.Products.Include(p => p.Category).Include(p => p.Supplier).AsEnumerable()//switch to client-side
+                .Where(p => p.UnitPrice > price);
+            if (model.Count() == 0)
+            {
+                return NotFound($"No products cost more than {price:C}.");
+            }
+            ViewData["MaxPrice"] = price.Value.ToString("C");
+            return View(model); // pass model to view
         }
     }
 }
