@@ -142,7 +142,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthwindEmployees", "North
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NorthwindMvc", "NorthwindMvc", "{26F36E61-35CC-47D9-89F6-63415A6A9550}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindMvc", "NorthwindMvc\NorthwindMvc.csproj", "{681CCCC9-827C-4DD7-ADD2-0B7709E76FE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthwindMvc", "NorthwindMvc\NorthwindMvc.csproj", "{681CCCC9-827C-4DD7-ADD2-0B7709E76FE6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NorthwindCms", "NorthwindCms", "{DE5D3A8F-06D4-4E00-A7DE-B1A50F365BE6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthwindCms", "..\..\..\cs8dotnetcore3-master\cs8dotnetcore3-master\PracticalApps\NorthwindCms\NorthwindCms.csproj", "{A9C6EEF6-69FB-497F-8402-4EF06AE02D03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -330,6 +334,10 @@ Global
 		{681CCCC9-827C-4DD7-ADD2-0B7709E76FE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{681CCCC9-827C-4DD7-ADD2-0B7709E76FE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{681CCCC9-827C-4DD7-ADD2-0B7709E76FE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9C6EEF6-69FB-497F-8402-4EF06AE02D03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9C6EEF6-69FB-497F-8402-4EF06AE02D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9C6EEF6-69FB-497F-8402-4EF06AE02D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9C6EEF6-69FB-497F-8402-4EF06AE02D03}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -389,6 +397,8 @@ Global
 		{E43D99E9-2F59-4D5B-B7F3-EEB9DF5D3EF3} = {002D7EE4-9FC1-411E-A48D-04E6A8F19B89}
 		{26F36E61-35CC-47D9-89F6-63415A6A9550} = {EE204C89-72CD-4AD9-A993-8A7CE0D07170}
 		{681CCCC9-827C-4DD7-ADD2-0B7709E76FE6} = {26F36E61-35CC-47D9-89F6-63415A6A9550}
+		{DE5D3A8F-06D4-4E00-A7DE-B1A50F365BE6} = {EE204C89-72CD-4AD9-A993-8A7CE0D07170}
+		{A9C6EEF6-69FB-497F-8402-4EF06AE02D03} = {DE5D3A8F-06D4-4E00-A7DE-B1A50F365BE6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD044F59-E281-4170-ACF9-D5C764FA7BE7}
