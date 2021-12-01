@@ -90,7 +90,7 @@ namespace NorthwindService
             app.UseCors(configurePolicy: options =>
             {
                 options.WithMethods("GET", "POST", "PUT", "DELETE");
-                options.WithOrigins("https://localhost:5002");  // for MVC client
+                options.WithOrigins("https://localhost:44379");  // for MVC client
             });
 
             app.UseEndpoints(endpoints =>
