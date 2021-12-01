@@ -148,6 +148,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NorthwindCms", "NorthwindCm
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthwindCms", "..\..\..\cs8dotnetcore3-master\cs8dotnetcore3-master\PracticalApps\NorthwindCms\NorthwindCms.csproj", "{A9C6EEF6-69FB-497F-8402-4EF06AE02D03}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NorthwindService", "NorthwindService", "{2F52484B-734F-4465-9828-4C164D5EF083}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthwindService", "NorthwindService\NorthwindService.csproj", "{6C4B07EC-AA07-4ADD-ABAA-E57A04B1D071}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RestClientTests", "RestClientTests", "{F6A8255D-A576-44CE-83CA-2B99E34070EE}"
+	ProjectSection(SolutionItems) = preProject
+		get-customers.http = get-customers.http
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -338,6 +347,10 @@ Global
 		{A9C6EEF6-69FB-497F-8402-4EF06AE02D03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9C6EEF6-69FB-497F-8402-4EF06AE02D03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9C6EEF6-69FB-497F-8402-4EF06AE02D03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C4B07EC-AA07-4ADD-ABAA-E57A04B1D071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C4B07EC-AA07-4ADD-ABAA-E57A04B1D071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C4B07EC-AA07-4ADD-ABAA-E57A04B1D071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C4B07EC-AA07-4ADD-ABAA-E57A04B1D071}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -399,6 +412,9 @@ Global
 		{681CCCC9-827C-4DD7-ADD2-0B7709E76FE6} = {26F36E61-35CC-47D9-89F6-63415A6A9550}
 		{DE5D3A8F-06D4-4E00-A7DE-B1A50F365BE6} = {EE204C89-72CD-4AD9-A993-8A7CE0D07170}
 		{A9C6EEF6-69FB-497F-8402-4EF06AE02D03} = {DE5D3A8F-06D4-4E00-A7DE-B1A50F365BE6}
+		{2F52484B-734F-4465-9828-4C164D5EF083} = {EE204C89-72CD-4AD9-A993-8A7CE0D07170}
+		{6C4B07EC-AA07-4ADD-ABAA-E57A04B1D071} = {2F52484B-734F-4465-9828-4C164D5EF083}
+		{F6A8255D-A576-44CE-83CA-2B99E34070EE} = {2F52484B-734F-4465-9828-4C164D5EF083}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD044F59-E281-4170-ACF9-D5C764FA7BE7}

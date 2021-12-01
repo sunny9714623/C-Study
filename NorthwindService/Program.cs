@@ -1,13 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace NorthwindMvc
+namespace NorthwindService
 {
     public class Program
     {
@@ -21,9 +21,7 @@ namespace NorthwindMvc
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.UseUrls("http://localhost:5000",
-                        "https://localhost:5002"
-                        );
+                    webBuilder.UseUrls("https://localhost:5001");
                 });
     }
 }

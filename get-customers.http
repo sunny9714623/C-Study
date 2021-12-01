@@ -1,0 +1,1 @@
+GET https://localhost:44345/api/customers/HTTP/1.1

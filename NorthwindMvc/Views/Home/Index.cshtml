@@ -24,6 +24,10 @@
             <li data-target="#categories" data-slide-to="@c" class="@currentItem"></li>
         }
     </ol>
+    <form asp-action="Customers" method="get">
+        <input name="country" placeholder="Enter a country" />
+        <input type="submit" />
+    </form>
     <form asp-action="ProductsThatCostMoreThan" method="get">
         <input name="price" placeholder="Enter a product price" />
         <input type="submit" />
