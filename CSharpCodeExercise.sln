@@ -157,6 +157,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RestClientTests", "RestClie
 		get-customers.http = get-customers.http
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NorthwindML", "NorthwindML", "{10B3D874-6FDB-482C-9EB1-D22953F0F601}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthwindML", "NorthwindML\NorthwindML.csproj", "{EEDB4F77-51E2-476B-93DE-A2041ADC568B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -351,6 +355,10 @@ Global
 		{6C4B07EC-AA07-4ADD-ABAA-E57A04B1D071}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C4B07EC-AA07-4ADD-ABAA-E57A04B1D071}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C4B07EC-AA07-4ADD-ABAA-E57A04B1D071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEDB4F77-51E2-476B-93DE-A2041ADC568B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEDB4F77-51E2-476B-93DE-A2041ADC568B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEDB4F77-51E2-476B-93DE-A2041ADC568B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEDB4F77-51E2-476B-93DE-A2041ADC568B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -415,6 +423,8 @@ Global
 		{2F52484B-734F-4465-9828-4C164D5EF083} = {EE204C89-72CD-4AD9-A993-8A7CE0D07170}
 		{6C4B07EC-AA07-4ADD-ABAA-E57A04B1D071} = {2F52484B-734F-4465-9828-4C164D5EF083}
 		{F6A8255D-A576-44CE-83CA-2B99E34070EE} = {2F52484B-734F-4465-9828-4C164D5EF083}
+		{10B3D874-6FDB-482C-9EB1-D22953F0F601} = {EE204C89-72CD-4AD9-A993-8A7CE0D07170}
+		{EEDB4F77-51E2-476B-93DE-A2041ADC568B} = {10B3D874-6FDB-482C-9EB1-D22953F0F601}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD044F59-E281-4170-ACF9-D5C764FA7BE7}

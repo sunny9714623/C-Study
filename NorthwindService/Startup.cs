@@ -19,6 +19,8 @@ using NorthwindService.Repositories;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerUI;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Http; // GetEndpoint() extension method
+using Microsoft.AspNetCore.Routing;
 
 namespace NorthwindService
 {
@@ -71,6 +73,7 @@ namespace NorthwindService
                     Version = "V1"
                 });
             });
+            services.AddHealthChecks().AddDbContextCheck<Northwind>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -93,10 +96,24 @@ namespace NorthwindService
                 options.WithOrigins("https://localhost:44379");  // for MVC client
             });
 
+            app.Use(next => (context) =>
+            {
+                var endpoint = context.GetEndpoint();
+                if (endpoint != null)
+                {
+                    WriteLine("*** Name: {0}; Route: {1}; Metadata: {2}", endpoint.DisplayName,
+                        (endpoint as RouteEndpoint)?.RoutePattern, string.Join(", ", endpoint.Metadata));
+                }
+
+                // pass context to next middleware in pipeline
+                return next(context);
+            });
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+            app.UseHealthChecks(path: "/howdoyoufeel");
 
             // use Swagger and SwaggerUI
             app.UseSwagger();
